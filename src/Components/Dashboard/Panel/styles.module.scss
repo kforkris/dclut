@@ -1,0 +1,102 @@
+.panelContainer {
+    margin-left: 320px;
+    margin-top: 40px;
+    margin-right: 30px;
+    height: calc(100vh - 50px);
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    // overflow: auto;
+    transition: all 0.3s ease-in-out;
+
+    padding-right: 5px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 20px;
+        align-items: center;
+        h4 {
+            font-family: Mulish;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -3%;
+            color: #031B15;
+        }
+
+        >div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            >div{
+                border: 1px solid #D9D9D9;
+                border-radius: 10px;
+                width: 90px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 12px;
+            }
+            input {
+                border: 1px solid #D9D9D9;
+                width: 270px;
+                height: 40px;
+                border-radius: 10px;
+                padding: 0px 10px;
+                font-family: Mulish;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0px;
+                outline: none;
+                text-transform: capitalize;
+
+            }
+        }
+    }
+    .tabContainer{
+        border: 1px solid #EBEBEB;
+        height: 64px;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        .tabs{
+            border: 0.5px solid #031B151A;
+            width: fit-content;
+            margin: 10px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            height: 40px;
+            // width: 330px;
+            >div{
+                display: flex;
+                gap: 4px;
+            margin: 0px 15px;
+                align-items: center;
+                gap: 6px;
+                cursor: pointer;
+                justify-content: center;
+                width: fit-content;
+                height: 32px;
+                padding: 0px 12px;
+                border-radius: 10px;
+                h5{
+                    font-family: Mulish;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: -0.05px;
+color: #031B15B2;
+                }
+            }
+        }
+    }
+    .scrollContainer{
+        height: calc(100vh - 180px);
+        overflow-y: auto;
+    background: #EBEBEB;
+        padding-bottom: 10px;
+    }
+}

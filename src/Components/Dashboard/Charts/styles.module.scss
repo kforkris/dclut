@@ -1,0 +1,241 @@
+.chartContainer {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    .chart {
+        box-shadow: 0px 1px 0px 0px #0000001F;
+        border: 1px solid #F1F1F1;
+        background: #FFF;
+        width: 32%;
+        border-radius: 12px;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+
+            h4 {
+                font-family: Mulish;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.26px;
+                color: #515153;
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .countHeader {
+            display: flex;
+            justify-content: space-between;
+            margin: 12px 0px;
+            padding: 0px 10px;
+
+            h2 {
+                font-family: Mulish;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: -0.26px;
+                vertical-align: middle;
+                color: #031B15;
+            }
+
+            >div {
+                h5 {
+                    font-family: Mulish;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 16px;
+                    letter-spacing: -0.26px;
+                    vertical-align: middle;
+                    color: #1D874F;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+
+                    svg {
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+
+                h6 {
+                    font-family: Mulish;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 16px;
+                    letter-spacing: -0.26px;
+                    color: #031B1599;
+                }
+            }
+
+        }
+
+        .chartContainer {
+            background: #FFF;
+            border-bottom: 1px solid #d5d5d5;
+        }
+
+        .monthCharts{
+            padding: 10px 10px;
+            display: flex;
+            gap: 10px;
+            >div{
+                display: flex;
+                gap: 6px;
+                align-items: center;
+                .bullet{
+                    width: 10px;
+                    height: 10px;
+                    background: #1D874F;
+                    border-radius: 100%;
+                }
+                h5{
+                    font-family: Mulish;
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: -0.26px;
+color: #7D7D7E;
+                }
+            }
+        }
+        .doghnutCharts {
+            position: relative;
+
+            .halfDoughnutContainer {
+                margin-top: 12px;
+
+                canvas {
+                    width: 180px;
+                    height: 120px;
+                }
+            }
+
+            .counts {
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                margin-top: 10px;
+
+                h4 {
+                    font-family: Mulish;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 16px;
+                    letter-spacing: -0.26px;
+                    text-align: center;
+                    color: #7D7D7E;
+                }
+
+                h5 {
+                    font-family: Mulish;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 20px;
+                    letter-spacing: -0.26px;
+                    text-align: center;
+                    margin-top: 5px;
+                }
+
+                h6 {
+                    font-family: Mulish;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    letter-spacing: -0.26px;
+                    text-align: center;
+                    color: #1D874F;
+                    margin-top: 5px;
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                }
+            }
+
+            .cityLabels {
+                margin-top: 10px;
+                padding: 0px 12px;
+
+                .label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .city {
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+
+                        >div {
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 100%;
+                            background: #6C4FED;
+                        }
+
+                        h4 {
+                            font-family: Mulish;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 16px;
+                            letter-spacing: -0.26px;
+                            color: #7D7D7E;
+                        }
+                    }
+
+                    .stats {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+                        h3 {
+                            font-family: Mulish;
+                            font-weight: 700;
+                            font-size: 13px;
+                            line-height: 16px;
+                            letter-spacing: -0.26px;
+                        }
+
+                        h4 {
+                            font-family: Mulish;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 16px;
+                            letter-spacing: -0.26px;
+                            color: #7D7D7E;
+                        }
+                        h5{
+                            font-family: Mulish;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: -0.26px;
+vertical-align: middle;
+color: #1D874F;
+display: flex;
+align-items: center;
+svg{
+    width: 20px;
+    height: 20px;
+}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
